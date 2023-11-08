@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">BottomNavigation</string>
-
+    <string name="app_name">Juragan Travel</string>
     <string name="home_txt">Home</string>
     <string name="like_txt">Like</string>
     <string name="search_txt">Search</string>

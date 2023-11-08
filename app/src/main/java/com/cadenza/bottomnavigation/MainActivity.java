@@ -44,12 +44,14 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_search:
                         fragment = new SearchFragment();
                         break;
-
                     case R.id.nav_shop:
-                        fragment = new SearchFragment();
+                        fragment = new ShopFragment();
                         break;
                     case R.id.nav_like:
                         fragment = new LikeFragment();
+                        break;
+                    case R.id.profile:
+                        fragment = new ProfileFragment();
                         break;
                 }
 
