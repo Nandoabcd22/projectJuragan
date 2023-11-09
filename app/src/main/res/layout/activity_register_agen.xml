@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".RegAgenActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingBottom="250dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register Jamaah"
+                android:layout_marginTop="100dp"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/merah"
+                android:fontFamily="@font/poppins_extrabold">
+            </TextView>
+
+            <EditText
+                android:id="@+id/namalengkap"
+                android:layout_gravity="center"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Nama Lengkap"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:hint="Email Aktif"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:inputType="textPassword"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/baseline_visibility_off_24"
+                android:hint="Password anda"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="8dp" />
+
+
+            <EditText
+                android:id="@+id/nohp"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:inputType="phone"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:drawablePadding="8dp"
+                android:hint="No. Handphone"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/signup_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/merah"
+                android:text="Daftar"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="20sp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

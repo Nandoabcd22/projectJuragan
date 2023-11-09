@@ -20,13 +20,20 @@
             android:background="@drawable/putihpendek" />
 
         <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/putihpendek"
+            android:layout_marginTop="30dp"
+            android:outlineSpotShadowColor="@color/black"
+            />
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:layout_marginRight="50dp"
             android:src="@drawable/ic_search"
             app:tint="@color/black"
             android:layout_alignParentRight="true"/>
-
 
         <ImageView
             android:layout_width="match_parent"
@@ -37,42 +44,58 @@
             android:background="@drawable/logo1"
             />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/putihpendek"
-            android:layout_marginTop="70dp"
-            android:outlineSpotShadowColor="@color/black"
-            />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="100dp"
             android:background="@drawable/pinkmotif"
             />
 
         <ImageView
             android:layout_width="38dp"
             android:layout_height="38dp"
-            android:layout_marginTop="130dp"
+            android:layout_marginTop="110dp"
             android:layout_marginLeft="330dp"
             android:src="@drawable/baseline_circle_notifications_24"
             android:layout_gravity="center"
             />
 
         <TextView
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="40dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="Assalamualaikum"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="110dp"
+            android:text="Assalamualaikum , "
             android:textStyle="bold"
             android:fontFamily="@font/poppins_bold"
             android:textSize="20sp"/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:text="Hari ini, 10 Nov 2023"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:text="4 Rabi' || 1445"
+            android:layout_marginTop="180dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="15sp"/>
 
         <HorizontalScrollView
             android:id="@+id/scrollH_type"
@@ -271,6 +294,21 @@
                     android:layout_width="170dp"
                     android:layout_height="130dp"
                     android:background="@drawable/masjid"/>
+                <TextView
+                    android:layout_marginLeft="210dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="102dp"
+                    android:text="Selengkapnya"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="15sp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/baseline_chevron_right_24"/>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="350dp"
@@ -283,6 +321,21 @@
                     android:layout_height="130dp"
                     android:layout_marginLeft="180dp"
                     android:background="@drawable/masjid"/>
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="102dp"
+                    android:text="Selengkapnya"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="15sp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/baseline_chevron_right_24"/>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
