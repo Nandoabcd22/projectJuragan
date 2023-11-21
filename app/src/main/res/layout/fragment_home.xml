@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:layout_marginTop="110dp"
-            android:text="Assalamualaikum , "
+            android:text="Assalamualaikum"
             android:textStyle="bold"
             android:fontFamily="@font/poppins_bold"
             android:textSize="20sp"/>
@@ -295,20 +295,47 @@
                     android:layout_height="130dp"
                     android:background="@drawable/masjid"/>
                 <TextView
-                    android:layout_marginLeft="210dp"
+                    android:layout_marginLeft="173dp"
                     android:layout_width="match_parent"
+                    android:paddingTop="18dp"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:layout_marginTop="102dp"
-                    android:text="Selengkapnya"
+                    android:text="Tersedia beberapa pilihan paket eksklusif untuk menghadirkan pengalaman umroh istimewah dengan harga terjangkau."
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="10sp"/>
+                <TextView
+                    android:layout_marginLeft="173dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/merah"
+                    android:text="Paket Umroh"
                     android:fontFamily="@font/poppins_bold"
                     android:textSize="15sp"/>
-                <ImageView
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_marginLeft="175dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="300dp"
-                    android:layout_marginTop="100dp"
-                    android:background="@drawable/baseline_chevron_right_24"/>
+                    android:textColor="@color/white"
+                    android:text="Mulia dari Rp 28,5 jt"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/btnSlkpnya"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="106dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Selengkapnya"
+                    android:drawableRight="@drawable/baseline_chevron_right_24"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="350dp"
@@ -322,20 +349,47 @@
                     android:layout_marginLeft="180dp"
                     android:background="@drawable/masjid"/>
                 <TextView
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="180dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/merah"
+                    android:text="Paket Haji"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="155dp"
+                    android:layout_width="match_parent"
+                    android:paddingTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Tersedia beragam opsi paket perjalanan bintang 5 untuk pengalaman haji yang istimewa, dengan harga yang terjangkau."
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="10sp"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginRight="190dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Mulia dari Rp 168 jt"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/btnSelengkapnya"
                     android:layout_marginLeft="40dp"
+                    android:layout_marginRight="170dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:layout_marginTop="102dp"
+                    android:layout_marginTop="106dp"
                     android:text="Selengkapnya"
+                    android:drawableRight="@drawable/baseline_chevron_right_24"
                     android:fontFamily="@font/poppins_bold"
                     android:textSize="15sp"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="130dp"
-                    android:layout_marginTop="100dp"
-                    android:background="@drawable/baseline_chevron_right_24"/>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 

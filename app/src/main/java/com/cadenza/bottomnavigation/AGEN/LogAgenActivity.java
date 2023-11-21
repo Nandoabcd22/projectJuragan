@@ -1,4 +1,4 @@
-package com.cadenza.bottomnavigation;
+package com.cadenza.bottomnavigation.AGEN;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,36 +17,31 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.cadenza.bottomnavigation.API.Db_Contract;
+import com.cadenza.bottomnavigation.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class LogJamaahActivity extends AppCompatActivity {
+public class LogAgenActivity extends AppCompatActivity {
 
-    private EditText etNik;
+    private EditText etEmail, etPassword;
     private Button btnLogin;
-    private TextView btnRegister, btnLupaNik;
+    private TextView btnRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_log_jamaah);
+        setContentView(R.layout.activity_log_agen);
 
-        etNik = findViewById(R.id.etNik);
+        etEmail = findViewById(R.id.etEmail);
+        etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.btnLogin);
         btnRegister = findViewById(R.id.btnRegister);
-        btnLupaNik = findViewById(R.id.btnLupaNik);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), RegJamaahActivity.class));
-            }
-        });
-        btnLupaNik.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), LupaNIKActivity.class));
+                startActivity(new Intent(getApplicationContext(), RegisterAgenActivity.class));
             }
         });
 
@@ -59,14 +54,15 @@ public class LogJamaahActivity extends AppCompatActivity {
     }
 
     private void loginUser() {
-        String nik = etNik.getText().toString();
+        String email = etEmail.getText().toString();
+        String password = etPassword.getText().toString();
 
-        if (!nik.isEmpty()) {
+        if (!(email.isEmpty() || password.isEmpty())) {
 
             RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
 
             // Ganti urlLogin dengan URL Anda
-            StringRequest stringRequest = new StringRequest(Request.Method.GET, Db_Contract.urlLogjamaah + "?nik=" + nik,
+            StringRequest stringRequest = new StringRequest(Request.Method.GET, Db_Contract.urlLogin + "?email=" + email + "&password=" + password,
                     new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
@@ -78,7 +74,7 @@ public class LogJamaahActivity extends AppCompatActivity {
 
                                 if (code == 200) {
                                     Toast.makeText(getApplicationContext(), "Login Berhasil", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                    startActivity(new Intent(getApplicationContext(), HomeAgenActivity.class));
                                 } else {
                                     Toast.makeText(getApplicationContext(), status, Toast.LENGTH_SHORT).show();
                                 }
@@ -94,7 +90,7 @@ public class LogJamaahActivity extends AppCompatActivity {
             });
             requestQueue.add(stringRequest);
         } else {
-            Toast.makeText(getApplicationContext(), "NIK tidak boleh kosong", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Email atau Password Salah", Toast.LENGTH_SHORT).show();
         }
     }
 }

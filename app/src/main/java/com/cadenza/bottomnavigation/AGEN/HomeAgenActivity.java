@@ -1,4 +1,4 @@
-package com.cadenza.bottomnavigation;
+package com.cadenza.bottomnavigation.AGEN;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -8,17 +8,18 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.cadenza.bottomnavigation.HomeFragment;
+import com.cadenza.bottomnavigation.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
-
+public class HomeAgenActivity extends AppCompatActivity {
     BottomNavigationView navigationView;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home_agen);
 
         //hide line status bar
 
@@ -38,29 +39,21 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (item.getItemId()){
 
-                    case R.id.nav_home:
-                        fragment = new HomeFragment();
+                    case R.id.nav_beranda:
+                        fragment = new BerandaFragment();
                         break;
-                    case R.id.nav_search:
-                        fragment = new SearchFragment();
+                    case R.id.nav_target:
+                        fragment = new TargetJamaahFragment();
                         break;
-                    case R.id.nav_shop:
-                        fragment = new ShopFragment();
+                    case R.id.nav_namajamaah:
+                        fragment = new NamaJamaahFragment();
                         break;
-                    case R.id.nav_like:
-                        Class fragmentClass = JadwalSholat.class;
-                        try {
-                            fragment = (Fragment) fragmentClass.newInstance();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                        break;
-                    case R.id.profile:
-                        fragment = new ProfileFragment();
+                    case R.id.nav_datapribadi:
+                        fragment = new DaraPribadiFragment();
                         break;
                 }
 
-                getSupportFragmentManager().beginTransaction().replace(R.id.body_container,fragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.body_container, fragment).commit();
 
 
                 return true;

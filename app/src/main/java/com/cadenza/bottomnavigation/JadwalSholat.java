@@ -1,5 +1,4 @@
 package com.cadenza.bottomnavigation;
-
 import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -8,18 +7,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Spinner;
-
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.cadenza.bottomnavigation.networking.ClientAsyncTask;
 import com.cadenza.bottomnavigation.networking.DaftarKota;
-
 import org.json.JSONArray;
-import org.json.JSONObject;
 import org.json.JSONException;
-
+import org.json.JSONObject;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -30,12 +25,7 @@ public class JadwalSholat extends AppCompatActivity {
 
     private List<DaftarKota> listDaftarKota;
     private ArrayAdapter<DaftarKota> mDaftarKotaAdapter;
-    TextView tvTanggal = findViewById(R.id.tv_tanggal);
-    TextView tvSubuh = findViewById(R.id.tv_subuh);
-    TextView tvDzuhur = findViewById(R.id.tv_dzuhur);
-    TextView tvAshar = findViewById(R.id.tv_ashar);
-    TextView tvMaghrib = findViewById(R.id.tv_maghrib);
-    TextView tvIsya = findViewById(R.id.tv_isya);
+    TextView tvTanggal, tvSubuh, tvDzuhur, tvAshar, tvMaghrib, tvIsya;
     private ImageView greetImg;
     private TextView greetText;
 
@@ -43,6 +33,14 @@ public class JadwalSholat extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jadwal_sholat);
+
+        tvTanggal = findViewById(R.id.tv_tanggal);
+        tvSubuh = findViewById(R.id.tv_subuh);
+        tvDzuhur = findViewById(R.id.tv_dzuhur);
+        tvAshar = findViewById(R.id.tv_ashar);
+        tvMaghrib = findViewById(R.id.tv_maghrib);
+        tvIsya = findViewById(R.id.tv_isya);
+
         Spinner kota = findViewById(R.id.kota);
         greetImg = findViewById(R.id.greeting_img);
         greetText = findViewById(R.id.greeting_text);

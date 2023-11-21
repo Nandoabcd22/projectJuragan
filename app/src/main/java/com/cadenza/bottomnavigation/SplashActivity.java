@@ -7,6 +7,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.cadenza.bottomnavigation.AGEN.LogAgenActivity;
+
 public class SplashActivity extends AppCompatActivity {
 
     @Override
