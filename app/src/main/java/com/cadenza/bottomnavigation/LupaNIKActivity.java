@@ -25,7 +25,11 @@ public class LupaNIKActivity extends AppCompatActivity {
         btnLPNIK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String wpurl="https://wa.me/+6282244983396?text=Hi, rohim";
+                String wpurl="https://wa.me/+6289686404940?text=Assalamualaiku ADMiN" +
+                        "Nama :" +
+                        "Nama Ayah :" +
+                        "Tanggal lahir :" +
+                        "Disini saya ingin menanyakan NIK saya dengan identitas yang tertera";
 
                 Intent intent=new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(wpurl));
@@ -33,4 +37,4 @@ public class LupaNIKActivity extends AppCompatActivity {
             }
         });
 
-}}
+}   }

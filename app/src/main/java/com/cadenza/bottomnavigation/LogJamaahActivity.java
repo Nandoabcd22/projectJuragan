@@ -59,14 +59,14 @@ public class LogJamaahActivity extends AppCompatActivity {
     }
 
     private void loginUser() {
-        String nik = etNik.getText().toString();
+        String NIK = etNik.getText().toString();
 
-        if (!nik.isEmpty()) {
+        if (!NIK.isEmpty()) {
 
             RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
 
             // Ganti urlLogin dengan URL Anda
-            StringRequest stringRequest = new StringRequest(Request.Method.GET, Db_Contract.urlLogjamaah + "?nik=" + nik,
+            StringRequest stringRequest = new StringRequest(Request.Method.GET, Db_Contract.urlLogjamaah + "?NIK=" + NIK,
                     new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
@@ -89,7 +89,7 @@ public class LogJamaahActivity extends AppCompatActivity {
                     }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(getApplicationContext(), "Login Gagal: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "NIK tidak ditemu kan, Login Gagal " + error.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             });
             requestQueue.add(stringRequest);

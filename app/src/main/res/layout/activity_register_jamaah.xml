@@ -54,9 +54,7 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/border"
                 android:drawableLeft="@drawable/baseline_password_24"
-                android:inputType="textPassword"
                 android:drawablePadding="8dp"
-                android:drawableRight="@drawable/baseline_visibility_off_24"
                 android:hint="Masukkan NIK anda"
                 android:fontFamily="@font/poppins_medium"
                 android:padding="8dp" />
@@ -101,24 +99,37 @@
                 android:hint="Masukkan Tanggal Lahir"
                 android:fontFamily="@font/poppins_medium"
                 android:padding="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins_black"
+                android:text="Pilihi Agen 1. Fahri | 2. Gigi"/>
             <Spinner
                 android:id="@+id/etIdAgen"
                 android:layout_width="380dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="0dp"
                 android:background="@drawable/border"
                 android:drawableLeft="@drawable/baseline_people_alt_24"
                 android:drawablePadding="8dp">
-
             </Spinner>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins_black"
+                android:text="Pilih Jenis Kelamin"/>
 
             <Spinner
                 android:id="@+id/etGender"
                 android:layout_width="380dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="0dp"
                 android:background="@drawable/border"
                 android:drawableLeft="@drawable/baseline_people_alt_24"
                 android:drawablePadding="8dp">

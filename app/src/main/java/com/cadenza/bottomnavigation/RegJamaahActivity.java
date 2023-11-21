@@ -82,16 +82,48 @@ public class RegJamaahActivity extends AppCompatActivity {
                 String alamat = etAlamat.getText().toString();
                 String nama_bapak = etNmaBapak.getText().toString();
 
-                if (!TextUtils.isEmpty(nama_lengkap) && !TextUtils.isEmpty(NIK) && !TextUtils.isEmpty(no_hp)
-                        && !TextUtils.isEmpty(tgl_lahir) && !TextUtils.isEmpty(jenis_kelamin)
-                        && !TextUtils.isEmpty(id_agen) && !TextUtils.isEmpty(alamat) && !TextUtils.isEmpty(nama_bapak)) {
+                boolean isValid = true;
+
+                if (TextUtils.isEmpty(nama_lengkap)) {
+                    etNamalengkap.setError("Nama lengkap harus diisi");
+                    isValid = false;
+                }
+
+                if (TextUtils.isEmpty(NIK)) {
+                    etNik.setError("NIK harus diisi");
+                    isValid = false;
+                } else if (NIK.length() != 16) {
+                    etNik.setError("NIK harus terdiri dari 16 angka");
+                    isValid = false;
+                }
+
+                if (TextUtils.isEmpty(no_hp)) {
+                    etNo_hp.setError("Nomor HP harus diisi");
+                    isValid = false;
+                }
+
+                if (TextUtils.isEmpty(tgl_lahir)) {
+                    etTgllahir.setError("Tanggal Lahir harus diisi");
+                    isValid = false;
+                }
+                if (TextUtils.isEmpty(alamat)) {
+                    etAlamat.setError("Alamat harus diisi");
+                    isValid = false;
+                }
+
+                if (TextUtils.isEmpty(nama_bapak)) {
+                    etNmaBapak.setError("Nama Ayah harus diisi");
+                    isValid = false;
+                }
+
+                // Jika data valid, panggil metode registerUser
+                if (isValid) {
                     registerUser(nama_lengkap, NIK, no_hp, tgl_lahir, jenis_kelamin, id_agen, alamat, nama_bapak);
-                } else {
-                    Toast.makeText(getApplicationContext(), "Ada Data Yang Masih Kosong", Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
+
 
     // Method untuk menampilkan DatePickerDialog
     private void showDatePickerDialog() {

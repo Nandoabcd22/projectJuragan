@@ -148,6 +148,9 @@
     <string name="title_activity_register_agen">RegisterAgenActivity</string>
     <string name="title_activity_edit_akun">EditAkunActivity</string>
     <string name="title_activity_lupa_nikactivity">LupaNIKActivity</string>
+    <string name="title_activity_lupa_pw_agen">LupaPwAgenActivity</string>
+    <string name="title_activity_panduan">PanduanActivit</string>
+    <string name="title_activity_hukum_ibadah_haji">HukumIbadahHajiActivity</string>
 
 
 </resources>

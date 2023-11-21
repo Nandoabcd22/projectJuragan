@@ -26,7 +26,7 @@ public class LogAgenActivity extends AppCompatActivity {
 
     private EditText etEmail, etPassword;
     private Button btnLogin;
-    private TextView btnRegister;
+    private TextView btnLupaPW;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,14 +36,15 @@ public class LogAgenActivity extends AppCompatActivity {
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.btnLogin);
-        btnRegister = findViewById(R.id.btnRegister);
+        btnLupaPW = findViewById(R.id.btnLupaPW);
 
-        btnRegister.setOnClickListener(new View.OnClickListener() {
+        btnLupaPW.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), RegisterAgenActivity.class));
+                startActivity(new Intent(getApplicationContext(), LupaPwAgenActivity.class));
             }
         });
+
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +58,17 @@ public class LogAgenActivity extends AppCompatActivity {
         String email = etEmail.getText().toString();
         String password = etPassword.getText().toString();
 
-        if (!(email.isEmpty() || password.isEmpty())) {
+        boolean isValid = true;
+
+        if (email.isEmpty()) {
+            etEmail.setError("Email harus diisi");
+            isValid = false;
+        }
+
+        if (password.isEmpty()) {
+            etPassword.setError("Password harus diisi");
+            isValid = false;
+        }
 
             RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
 
@@ -89,8 +100,5 @@ public class LogAgenActivity extends AppCompatActivity {
                 }
             });
             requestQueue.add(stringRequest);
-        } else {
-            Toast.makeText(getApplicationContext(), "Email atau Password Salah", Toast.LENGTH_SHORT).show();
         }
     }
-}
