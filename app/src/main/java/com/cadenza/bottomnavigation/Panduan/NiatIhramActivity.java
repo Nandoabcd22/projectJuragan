@@ -9,15 +9,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.cadenza.bottomnavigation.R;
 
-public class HukumIbadahHajiActivity extends AppCompatActivity {
-
+public class NiatIhramActivity extends AppCompatActivity {
     private ImageView btnkembali;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hukum_ibadah_haji);
+        setContentView(R.layout.activity_niat_ihram);
 
         btnkembali = findViewById(R.id.btnKembali);
 
@@ -27,5 +26,5 @@ public class HukumIbadahHajiActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), panduanActivity.class));
             }
         });
-
-}}
+    }
+}

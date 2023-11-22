@@ -25,10 +25,10 @@ public class LupaNIKActivity extends AppCompatActivity {
         btnLPNIK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String wpurl="https://wa.me/+6289686404940?text=Assalamualaiku ADMiN" +
-                        "Nama :" +
-                        "Nama Ayah :" +
-                        "Tanggal lahir :" +
+                String wpurl="https://wa.me/+6289686404940?text=Assalamualaikum ADMIN" + "%0A" +
+                        "Nama :" + "%0A" +
+                        "Nama Ayah :" + "%0A" +
+                        "Tanggal lahir :" + "%0A" +
                         "Disini saya ingin menanyakan NIK saya dengan identitas yang tertera";
 
                 Intent intent=new Intent(Intent.ACTION_VIEW);

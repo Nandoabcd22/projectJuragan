@@ -16,21 +16,80 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Panduan.DoaMasukMasjidilActivity"
+            android:exported="false"
+            android:label="@string/title_activity_doa_masuk_masjidil"
+            android:theme="@style/Theme.BottomNavigation" />
+        <activity
+            android:name=".Panduan.DoaMemasukiActivity"
+            android:exported="false"
+            android:label="@string/title_activity_doa_memasuki"
+            android:theme="@style/Theme.BottomNavigation" />
+        <activity
+            android:name=".Panduan.TalbiyahActivity"
+            android:exported="false"
+            android:label="@string/title_activity_talbiyah"
+            android:theme="@style/Theme.BottomNavigation" />
+        <activity
+            android:name=".Panduan.DoaSetelahMemakaiActivity"
+            android:exported="false"
+            android:label="@string/title_activity_doa_setelah_memakai"
+            android:theme="@style/Theme.BottomNavigation" />
+        <activity
+            android:name=".Panduan.NiatUmrohActivity"
+            android:exported="false"
+            android:label="@string/title_activity_niat_umroh"
+            android:theme="@style/Theme.BottomNavigation" />
+        <activity
+            android:name=".Panduan.HukumIbadahUmrohActivity"
+            android:exported="false"
+            android:label="@string/title_activity_hukum_ibadah_umroh"
+            android:theme="@style/Theme.BottomNavigation" />
+        <activity
+            android:name=".Panduan.DoaKembaliKerumahActivity"
+            android:exported="false"
+            android:label="@string/title_activity_doa_kembali_kerumah"
+            android:theme="@style/Theme.BottomNavigation" />
+        <activity
+            android:name=".Panduan.DoaTahallulActivity"
+            android:exported="false"
+            android:label="@string/title_activity_doa_tahallul"
+            android:theme="@style/Theme.BottomNavigation" />
+        <activity
+            android:name=".Panduan.DoaSaiActivity"
+            android:exported="false"
+            android:label="@string/title_activity_doa_sai"
+            android:theme="@style/Theme.BottomNavigation" />
+        <activity
+            android:name=".Panduan.TawafIfadahActivity"
+            android:exported="false"
+            android:label="@string/title_activity_tawaf_ifadah"
+            android:theme="@style/Theme.BottomNavigation" />
+        <activity
+            android:name=".Panduan.MelemparJumrohActivity"
+            android:exported="false"
+            android:label="@string/title_activity_melempar_jumroh"
+            android:theme="@style/Theme.BottomNavigation" />
+        <activity
+            android:name=".Panduan.DoaArafahActivity"
+            android:exported="false"
+            android:label="@string/title_activity_doa_arafah"
+            android:theme="@style/Theme.BottomNavigation" />
+        <activity
+            android:name=".Panduan.NiatIhramActivity"
+            android:exported="false"
+            android:label="@string/title_activity_niat_ihram"
+            android:theme="@style/Theme.BottomNavigation" />
+        <activity
             android:name=".Panduan.HukumIbadahHajiActivity"
             android:exported="false"
             android:label="@string/title_activity_hukum_ibadah_haji"
             android:theme="@style/Theme.BottomNavigation" />
         <activity
             android:name=".Panduan.panduanActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/title_activity_panduan"
-            android:theme="@style/Theme.BottomNavigation">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/Theme.BottomNavigation"/>
         <activity
             android:name=".AGEN.LupaPwAgenActivity"
             android:exported="false"
@@ -49,13 +108,19 @@
             android:exported="false" />
         <activity
             android:name=".Splash1Activity"
-            android:exported="false"></activity>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".LogJamaahActivity"
             android:exported="false" />

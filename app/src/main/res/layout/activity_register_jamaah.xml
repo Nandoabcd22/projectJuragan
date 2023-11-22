@@ -106,6 +106,7 @@
                 android:layout_marginLeft="20dp"
                 android:fontFamily="@font/poppins_black"
                 android:text="Pilihi Agen 1. Fahri | 2. Gigi"/>
+
             <Spinner
                 android:id="@+id/etIdAgen"
                 android:layout_width="380dp"
@@ -115,7 +116,9 @@
                 android:background="@drawable/border"
                 android:drawableLeft="@drawable/baseline_people_alt_24"
                 android:drawablePadding="8dp">
+
             </Spinner>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

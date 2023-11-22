@@ -24,9 +24,9 @@ public class LupaPwAgenActivity extends AppCompatActivity {
         btnLpPw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String wpurl="https://wa.me/+6289686404940?text=Assalamualaikum Admin" +
-                        "Nama   :" +
-                        "Email  :" +
+                String wpurl="https://wa.me/+6289686404940?text=Assalamualaikum ADMIN" + "%0A" +
+                        "Nama   :" + "%0A" +
+                        "Email  :" + "%0A" +
                         "Disini saya ingin menanyakan password dengan identitas yang tertera";
 
                 Intent intent=new Intent(Intent.ACTION_VIEW);

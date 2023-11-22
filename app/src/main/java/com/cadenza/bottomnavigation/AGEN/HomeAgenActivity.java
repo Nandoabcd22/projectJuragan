@@ -49,7 +49,7 @@ public class HomeAgenActivity extends AppCompatActivity {
                         fragment = new NamaJamaahFragment();
                         break;
                     case R.id.nav_datapribadi:
-                        fragment = new DaraPribadiFragment();
+                        fragment = new DataPribadiFragment();
                         break;
                 }
 

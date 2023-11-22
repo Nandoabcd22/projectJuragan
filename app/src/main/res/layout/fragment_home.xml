@@ -9,6 +9,7 @@
     tools:context=".HomeFragment">
 
     <RelativeLayout
+        android:id="@+id/homeFragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -22,10 +23,9 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/putihpendek"
             android:layout_marginTop="30dp"
-            android:outlineSpotShadowColor="@color/black"
-            />
+            android:background="@drawable/putihpendek"
+            android:outlineSpotShadowColor="@color/black" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -111,8 +111,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:ignore="MissingConstraints"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_marginVertical="240dp"
             android:gravity="center">
 
@@ -133,9 +133,10 @@
                     app:cardCornerRadius="8dp">
 
                     <ImageView
+                        android:id="@+id/btnPanduan"
                         android:layout_width="55dp"
                         android:layout_height="55dp"
-                        android:src="@android:drawable/ic_lock_silent_mode_off"
+                        android:src="@drawable/buku"
                         android:layout_gravity="center"/>
 
                 </androidx.cardview.widget.CardView>
@@ -143,7 +144,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Bacaan"
+                    android:text="Panduan"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins_medium"
@@ -163,7 +164,7 @@
                     android:id="@+id/TableBtn"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginHorizontal="10dp"
                     android:backgroundTint="@color/merah"
                     android:outlineSpotShadowColor="@color/white"
                     android:outlineAmbientShadowColor="@color/white"
@@ -171,9 +172,10 @@
                     app:cardCornerRadius="8dp">
 
                     <ImageView
-                        android:layout_width="62dp"
-                        android:layout_height="62dp"
-                        android:src="@android:drawable/ic_media_pause"
+                        android:id="@+id/btnAlquran"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/quran"
                         android:layout_gravity="center"/>
 
                 </androidx.cardview.widget.CardView>
@@ -181,7 +183,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Doa"
+                    android:text="Al-Qur'an"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins_medium"
@@ -207,9 +209,9 @@
                     app:cardCornerRadius="8dp">
 
                     <ImageView
-                        android:layout_width="38dp"
-                        android:layout_height="38dp"
-                        android:src="@android:drawable/ic_popup_reminder"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:src="@drawable/baseline_photo_24"
                         android:layout_gravity="center"
                         />
 
@@ -218,7 +220,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Lacak"
+                    android:text="Galeri"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins_medium"
@@ -237,7 +239,45 @@
                     android:id="@+id/compassBtn"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/merah"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:textSize="30dp"
+                    app:cardCornerRadius="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_quiz_24" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Tanya"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btntesti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btnTestimoni"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="0dp"
                     android:backgroundTint="@color/merah"
                     android:outlineSpotShadowColor="@color/white"
                     android:outlineAmbientShadowColor="@color/white"
@@ -245,23 +285,23 @@
                     app:cardCornerRadius="8dp">
 
                     <ImageView
-                        android:layout_width="38dp"
-                        android:layout_height="38dp"
-                        android:src="@android:drawable/ic_dialog_map"
+                        android:layout_width="58dp"
+                        android:layout_height="62dp"
                         android:layout_gravity="center"
-                        />
+                        android:src="@drawable/baseline_question_answer_24" />
 
                 </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="15dp"
-                    android:text="Compas"
+                    android:layout_marginLeft="0dp"
+                    android:text="Testimoni"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/white"/>
+
 
             </LinearLayout>
 
